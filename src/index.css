@@ -1,3 +1,26 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.active-tab {
+  height: fit-content !important;
+  padding-top: 0.5rem !important;
+  background-color: #bfc3c4 !important;
+  padding-bottom: 0.5rem !important;
+}
+
+.active-tab {
+  
+}
+
+.active-tab .hide-botto-border {
+  position: absolute;
+  width: 110%;
+  height: 20px;
+  background-color: #bfc3c4;
+  bottom: -18px;
+}
+
+.tabs-container {
+  background-color: #bfc3c4 !important;
+}
