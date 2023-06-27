@@ -2,25 +2,30 @@
 @tailwind components;
 @tailwind utilities;
 
-.active-tab {
-  height: fit-content !important;
-  padding-top: 0.5rem !important;
-  background-color: #bfc3c4 !important;
-  padding-bottom: 0.5rem !important;
+:root {
+  --tab-bg-color: #ebefef;
 }
 
 .active-tab {
-  
+  height: fit-content !important;
+  padding-top: 0.6rem !important;
+  background-color: var(--tab-bg-color) !important;
+  padding-bottom: 0.6rem !important;
+}
+
+.active-tab::before, .active-tab::after {
+  --tab-border-color: var(--tab-bg-color);
+  --tab-bg: var(--tab-bg-color);
 }
 
 .active-tab .hide-botto-border {
   position: absolute;
   width: 110%;
   height: 20px;
-  background-color: #bfc3c4;
+  background-color: var(--tab-bg-color);
   bottom: -18px;
 }
 
 .tabs-container {
-  background-color: #bfc3c4 !important;
+  background-color: var(--tab-bg-color) !important;
 }
