@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+body{
+  font-family: 'Open Sans','Inter', 'Roboto', sans-serif;
+}
+
 :root {
   --tab-bg-color: #ebefef;
 }
@@ -18,12 +22,8 @@
   --tab-bg: var(--tab-bg-color);
 }
 
-.active-tab .hide-botto-border {
-  position: absolute;
-  width: 110%;
-  height: 20px;
-  background-color: var(--tab-bg-color);
-  bottom: -18px;
+.active-tab span {
+  color: #111;
 }
 
 .tabs-container {
